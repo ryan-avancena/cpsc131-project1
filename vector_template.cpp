@@ -24,9 +24,6 @@ template <typename T> class Item{
 };
 template<typename T> class Inventory{
     public:
-        /* CONSTRUCTOR */
-
-        // Write Your code 
         void addNewItem(Item<T> _item) {
             bool condition = false; 
             /* ITERATES THROUGH LIST OF ITEMS */
@@ -42,7 +39,6 @@ template<typename T> class Inventory{
             }
         }
 
-        // ask about parameters
         void updateItem(T _itemName, T _expiration, T _category, int _quantity) {
             /* ITERATES THROUGH LIST OF ITEMS */
             bool condition = false; 
@@ -93,7 +89,6 @@ template<typename T> class Inventory{
             throw "Item not found in inventory. (Remove)";
         }
         
-        /* STILL NEED EXCEPTIONS */
         void searchItem(T _itemName) {
             for (int i = 0; i < items.size();i++) {
                 if (items[i].name == _itemName) {
