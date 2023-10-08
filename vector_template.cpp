@@ -196,7 +196,6 @@ int main(){
         std::cout <<msg << std::endl;
     }
     i1.displayItems();
-    std::cout << "This line." << std::endl; /* NOT APART OF CODE */
     i1.updateItem("Cerels","09/27/2023","Regular",4);
     i1.displayItems();
     i1.Total();
@@ -231,7 +230,7 @@ int main(){
     s1.display();
     s1.Total_appointments("09/12/2023","12:00PM");
     Appointment<std::string> a5("Chris Lynn","09/12/2023","12:00PM","879455714");
-    s1.schedule(a4);
+    s1.schedule(a5);
     s1.removeRecent();
     s1.display();
 }
